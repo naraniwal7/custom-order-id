@@ -1,0 +1,14 @@
+<div id="externalOrderId" style="font-size: 16px;">
+<br/>
+    <strong><?php echo __('External Order Id ') ?>:</strong>
+    <span class="order-id"><?=$block->getExternalOrderId() ?></span>
+</div>
+<script type="text/javascript">
+    require(
+        ['jquery'],
+        function($) {
+            var element = $('#externalOrderId').detach();
+            $('.order-information .admin__page-section-item-title').append(element);
+        }
+    );
+</script>
